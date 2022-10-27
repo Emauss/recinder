@@ -1,7 +1,7 @@
 import "../homeContentBlock/homeContentBlock.scss";
 
 import foto_1 from "../../assets/images/search.png";
-import foto_2 from "../../assets/images/cooking.png";
+import foto_2 from "../../assets/images/selective.png";
 import foto_3 from "../../assets/images/cooking.png";
 
 const HomeContentBlock = () => {
