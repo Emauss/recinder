@@ -1,0 +1,14 @@
+@import "../../utils/theme.scss";
+
+.imgSize{
+    height: 156px;
+    border-radius: 25px;
+}
+
+.blockContent{
+    background-color: $secondaryBlue;
+    width: 90%;
+    border-radius: 25px;
+    margin: 30px auto;
+    font-size: larger;
+}

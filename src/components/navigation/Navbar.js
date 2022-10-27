@@ -1,12 +1,11 @@
 import "./navbar.scss";
-// import Logo from "assets/icons/logo.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
         <a className="navbar-brand" href="/">
-          {/* <img src={Logo} alt="Logo" /> */}
+          <img src="../../../public/assets/icons/title-icon.ico" alt="" />
           Recinder
         </a>
         <button

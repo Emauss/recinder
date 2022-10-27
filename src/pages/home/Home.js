@@ -1,5 +1,14 @@
+import "../home/home.scss";
+import Carousel from "../../components/carousel/Carousel";
+import HomeContentBlock from "../../components/homeContentBlock/HomeContentBlock";
+
 const Home = () => {
-  return <div className="container">Home</div>;
+  return (
+    <>
+      <Carousel />
+      <HomeContentBlock />
+    </>
+  );
 };
 
 export default Home;
