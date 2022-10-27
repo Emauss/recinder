@@ -1,6 +1,6 @@
 import "../carousel/carousel.scss";
-import carosuel_photo_1 from "../../assets/images/chicken-wings.webp";
-import carosuel_photo_2 from "../../assets/images/vegetables.jpeg";
+import carosuel_photo_1 from "../../assets/images/pakaos.jpeg";
+import carosuel_photo_2 from "../../assets/images/background.webp";
 import carosuel_photo_3 from "../../assets/images/menu.jpeg";
 
 const Carousel = () => {
