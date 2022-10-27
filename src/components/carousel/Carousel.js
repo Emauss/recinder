@@ -37,21 +37,27 @@ const Carousel = () => {
           <img src={carosuel_photo_1} className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block contentCarousel">
             <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <p className="text-center">
+              Some representative placeholder content for the first slide.
+            </p>
           </div>
         </div>
         <div className="carousel-item imgHeight">
           <img src={carosuel_photo_2} className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block contentCarousel">
             <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <p className="text-center">
+              Some representative placeholder content for the second slide.
+            </p>
           </div>
         </div>
         <div className="carousel-item imgHeight">
           <img src={carosuel_photo_3} className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block contentCarousel">
             <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <p className="text-center">
+              Some representative placeholder content for the third slide.
+            </p>
           </div>
         </div>
       </div>
