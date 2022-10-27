@@ -8,7 +8,7 @@ const FilteringTab = () => {
           className="form-select mb-2"
           aria-label="Default select example"
         >
-          <option selected>Choose cuisine</option>
+          <option selected>Select cuisine</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
@@ -17,7 +17,7 @@ const FilteringTab = () => {
           className="form-select mb-2"
           aria-label="Default select example"
         >
-          <option selected>Choose tools</option>
+          <option selected>Select tools</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
@@ -26,7 +26,7 @@ const FilteringTab = () => {
           className="form-select mb-2"
           aria-label="Default select example"
         >
-          <option selected>Choose ingredients</option>
+          <option selected>Select ingredients</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
@@ -35,7 +35,7 @@ const FilteringTab = () => {
           className="form-select mb-2"
           aria-label="Default select example"
         >
-          <option selected>Choose tolerance</option>
+          <option selected>Select tolerance</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
