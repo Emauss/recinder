@@ -1,5 +1,5 @@
 import "./navbar.scss";
-import Logo from "../../assets/icons/logo.png";
+import logo from "../../assets/icons/favicon.ico";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
         <a className="navbar-brand" href="/">
-          <img src={Logo} alt="Logo" />
+          <img src={logo} alt="Logo" className="logo" />
           Recinder
         </a>
         <button

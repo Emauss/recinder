@@ -1,0 +1,25 @@
+@import "../../utils/theme.scss";
+
+.imgSize{
+    height: 156px;
+    border-radius: 25px;
+    text-align: center;
+}
+.container{
+
+    .blockContent{
+        background-color: $secondaryBlue;
+        max-width: 90%;
+        border-radius: 25px;
+        margin: 30px auto;
+        font-size: larger;
+        p {
+            font-weight: 300;
+        }
+    }
+    
+}
+
+@media (max-width: 767px){
+
+}
