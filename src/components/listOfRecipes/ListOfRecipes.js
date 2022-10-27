@@ -1,9 +1,12 @@
 import "..//listOfRecipes/listOfRecipes.scss";
+import RecipeElement from "../recipeElement/RecipeElement";
 
 const ListOfRecipes = () => {
   return (
     <>
-      <div className="container"></div>
+      <div className="listOfRecipes p-3">
+        <RecipeElement />
+      </div>
     </>
   );
 };

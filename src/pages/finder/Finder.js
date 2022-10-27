@@ -5,10 +5,12 @@ import ListOfRecipes from "../../components/listOfRecipes/ListOfRecipes";
 const Finder = () => {
   return (
     <>
-      <div className="container">
+      <div className="container ">
         <h2>Let's explore some recipes!👨🏻‍🍳</h2>
-        <FilteringTab />
-        <ListOfRecipes />
+        <div className="d-flex">
+          <FilteringTab />
+          <ListOfRecipes />
+        </div>
       </div>
     </>
   );
