@@ -4,7 +4,7 @@ const Carousel = () => {
   return (
     <div
       id="carouselExampleCaptions"
-      className="carousel carousel-dark slide"
+      className="carousel carousel-dark slide mb-5"
       data-bs-ride="carousel"
     >
       <div class="carousel-indicators">
@@ -30,9 +30,9 @@ const Carousel = () => {
         ></button>
       </div>
       <div className="carousel-inner">
-        <div className="carousel-item imgHeight">
+        <div className="carousel-item active imgHeight">
           <img
-            src="https://esmmweighless.com/wp-content/uploads/2019/12/Carolyn-Cooking-Blog.jpg"
+            src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000"
             className="d-block w-100"
             alt="..."
           />
@@ -43,7 +43,7 @@ const Carousel = () => {
         </div>
         <div className="carousel-item imgHeight">
           <img
-            src="https://esmmweighless.com/wp-content/uploads/2019/12/Carolyn-Cooking-Blog.jpg"
+            src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_41/3044956/191009-cooking-vegetables-al-1422.jpg"
             className="d-block w-100"
             alt="..."
           />
@@ -54,7 +54,7 @@ const Carousel = () => {
         </div>
         <div className="carousel-item imgHeight">
           <img
-            src="https://esmmweighless.com/wp-content/uploads/2019/12/Carolyn-Cooking-Blog.jpg"
+            src="https://wallpaper.dog/large/20399393.jpg"
             className="d-block w-100"
             alt="..."
           />
