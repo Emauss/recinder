@@ -1,12 +1,13 @@
 import "./navbar.scss";
-// import Logo from "assets/icons/logo.png";
+import logo from "../../assets/icons/favicon.ico";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
         <a className="navbar-brand" href="/">
-          {/* <img src={Logo} alt="Logo" /> */}
+          <img src={logo} alt="Logo" className="logo" />
           Recinder
         </a>
         <button
@@ -22,15 +23,15 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-item nav-link" href="#">
+            <Link className="nav-item nav-link" to="/">
               Home
-            </a>
-            <a className="nav-item nav-link" href="#">
+            </Link>
+            <Link className="nav-item nav-link" to="/">
               Finder
-            </a>
-            <a className="nav-item nav-link" href="#">
+            </Link>
+            <Link className="nav-item nav-link" to="/about-us">
               About us
-            </a>
+            </Link>
           </div>
         </div>
       </div>
