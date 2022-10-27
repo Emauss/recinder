@@ -1,5 +1,9 @@
 import "../homeContentBlock/homeContentBlock.scss";
 
+import foto_1 from "../../assets/images/search.png";
+import foto_2 from "../../assets/images/cooking.png";
+import foto_3 from "../../assets/images/cooking.png";
+
 const HomeContentBlock = () => {
   return (
     <div className="container">
@@ -13,24 +17,13 @@ const HomeContentBlock = () => {
             and scrambled it to make a type specimen book.
           </p>
         </div>
-        {/* <div>
-            <img src="../../../public/assets/images/search.png" alt="..." />
-                  </div> */}
         <div className="align-self-center">
-          <img
-            src="https://esmmweighless.com/wp-content/uploads/2019/12/Carolyn-Cooking-Blog.jpg"
-            alt="..."
-            className="imgSize p-1"
-          />
+          <img src={foto_1} alt="..." className="imgSize p-1" />
         </div>
       </div>
       <div className="d-flex blockContent p-3">
         <div className="align-self-center">
-          <img
-            src="https://esmmweighless.com/wp-content/uploads/2019/12/Carolyn-Cooking-Blog.jpg"
-            alt="..."
-            className="imgSize p-1"
-          />
+          <img src={foto_2} alt="..." className="imgSize p-1" />
         </div>
         <div className="mx-4">
           <h2 className="text-center">Filter them ...</h2>
@@ -41,9 +34,6 @@ const HomeContentBlock = () => {
             and scrambled it to make a type specimen book.
           </p>
         </div>
-        {/* <div>
-            <img src="../../../public/assets/images/search.png" alt="..." />
-                  </div> */}
       </div>
       <div className="d-flex blockContent p-3">
         <div className="mx-4">
@@ -55,15 +45,8 @@ const HomeContentBlock = () => {
             and scrambled it to make a type specimen book.
           </p>
         </div>
-        {/* <div>
-            <img src="../../../public/assets/images/search.png" alt="..." />
-                  </div> */}
         <div className="align-self-center">
-          <img
-            src="https://esmmweighless.com/wp-content/uploads/2019/12/Carolyn-Cooking-Blog.jpg"
-            alt="..."
-            className="imgSize p-1"
-          />
+          <img src={foto_3} alt="..." className="imgSize p-1" />
         </div>
       </div>
     </div>
