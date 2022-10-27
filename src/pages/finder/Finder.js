@@ -6,7 +6,7 @@ const Finder = () => {
   return (
     <>
       <div className="container ">
-        <h2>Let's explore some recipes!👨🏻‍🍳</h2>
+        <h2 className="my-5">Let's explore some recipes!👨🏻‍🍳</h2>
         <div className="d-flex">
           <FilteringTab />
           <ListOfRecipes />

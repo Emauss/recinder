@@ -4,7 +4,10 @@ import RecipeElement from "../recipeElement/RecipeElement";
 const ListOfRecipes = () => {
   return (
     <>
-      <div className="listOfRecipes p-3">
+      <div className="">
+        <RecipeElement />
+        <RecipeElement />
+        <RecipeElement />
         <RecipeElement />
       </div>
     </>

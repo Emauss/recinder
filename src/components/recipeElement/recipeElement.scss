@@ -1,5 +1,28 @@
 @import "../../utils/theme.scss";
 
+.titleRecipe{
+    border-bottom: ridge;
+}
+
 .imgSize{
     height: 200px;
+    border-radius: 25px;
+}
+
+.shortInfoBar {
+    text-align: right;
+    font-size: larger;
+    font-style: italic;
+    font-weight: 200;
+
+    span{
+        margin-left: 20px;
+    }
+
+}
+
+.recipeBlock{
+        width: 100%;
+        background-color: $secondaryBlue;
+        border-radius: $radius;
 }
