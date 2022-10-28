@@ -10,7 +10,7 @@ const Carousel = () => {
       className="carousel carousel-dark slide mb-5"
       data-bs-ride="carousel"
     >
-      <div class="carousel-indicators">
+      <div className="carousel-indicators">
         <button
           type="button"
           data-bs-target="#carouselExampleCaptions"
