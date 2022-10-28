@@ -21,7 +21,7 @@ const RecipeElement = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-lg-4 text-center">
+        <div className="col-12 col-lg-4 text-center align-self-center">
           <img src={foto_1} alt="" className="imgSize" />
         </div>
       </div>
