@@ -5,3 +5,11 @@
     border-radius: $radius;
     margin-bottom: 24px;
 }
+
+.submitButton {
+    width: 100%;
+    background-color: $primaryBlue;
+    &:hover {
+        background-color: #72bbff;
+    }
+}
