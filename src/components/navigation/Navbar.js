@@ -28,7 +28,7 @@ const Navbar = () => {
             <Link className="nav-item nav-link" to="/">
               Home
             </Link>
-            <Link className="nav-item nav-link" to="/">
+            <Link className="nav-item nav-link" to="/finder">
               Finder
             </Link>
             <Link className="nav-item nav-link" to="/about-us">
