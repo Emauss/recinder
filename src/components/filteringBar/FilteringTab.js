@@ -19,9 +19,7 @@ const FilteringTab = ({ filters, setFilters }) => {
             placeholder="Select cuisine"
             className="mb-2"
             isMulti
-            // value={filters?.cuisine?.filter((item) =>
-            //   cuisine.includes(item.value)
-            // )}
+            value={filters.cuisine}
             onChange={(val) => setFilters({ ...filters, cuisine: val })}
           />
           <Select
@@ -29,6 +27,7 @@ const FilteringTab = ({ filters, setFilters }) => {
             placeholder="Select category"
             className="mb-2"
             isMulti
+            value={filters.category}
             onChange={(val) => setFilters({ ...filters, category: val })}
           />
 
@@ -37,6 +36,7 @@ const FilteringTab = ({ filters, setFilters }) => {
             placeholder="Select tools"
             className="mb-2"
             isMulti
+            value={filters.tools}
             onChange={(val) => setFilters({ ...filters, tools: val })}
           />
 
@@ -45,6 +45,7 @@ const FilteringTab = ({ filters, setFilters }) => {
             placeholder="Select ingredients"
             className="mb-2"
             isMulti
+            value={filters.ingredients}
             onChange={(val) => setFilters({ ...filters, ingredients: val })}
           />
 
@@ -53,6 +54,7 @@ const FilteringTab = ({ filters, setFilters }) => {
             placeholder="Select intolerance"
             className="mb-2"
             isMulti
+            value={filters.intolerance}
             onChange={(val) => setFilters({ ...filters, intolerance: val })}
           />
 
@@ -60,6 +62,7 @@ const FilteringTab = ({ filters, setFilters }) => {
             options={SORTINGOPTIONS}
             placeholder="Sort"
             className="mb-2"
+            value={filters.sort}
             onChange={(val) => setFilters({ ...filters, sort: val })}
           />
           <button type="button" className="btn submitButton">
