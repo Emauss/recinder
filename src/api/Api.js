@@ -14,6 +14,6 @@ export const getRecipes = async (number = 10) => {
       return response.data;
     })
     .catch((error) => {
-      console.log(error);
+      return Promise.reject(error);
     });
 };
