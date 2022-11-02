@@ -1,13 +1,14 @@
 import axios from "axios";
 
-export const getAllRecipes = async (offset = 0) => {
+export const getRecipes = async (number = 10) => {
+  const params = {};
+  params.apiKey = process.env.REACT_APP_API_KEY;
+  params.addRecipeInformation = true;
+  params.number = number;
+
   return await axios
     .get(`${process.env.REACT_APP_API_URL}/complexSearch`, {
-      params: {
-        apiKey: process.env.REACT_APP_API_KEY,
-        addRecipeInformation: true,
-        offset: offset,
-      },
+      params: params,
     })
     .then((response) => {
       return response.data;
