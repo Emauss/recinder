@@ -8,7 +8,7 @@ const ListOfRecipes = ({ data }) => {
       <div className="col-12 col-md-9">
         <InfiniteScroll
           pageStart={0}
-          loadMore={val => console.log('nastepne', val)}
+          loadMore={(val) => console.log("nastepne", val)}
           hasMore={true || false}
           loader={
             <div className="loader" key={0}>

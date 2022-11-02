@@ -9,10 +9,10 @@ import {
   SORTINGOPTIONS,
 } from "../../const/filterItems";
 
-const FilteringTab = ({ filters, setFilters }) => {
+const FilteringTab = ({ filters, setFilters, handleFiltering }) => {
   return (
     <div className="col-12 col-md-3">
-      <form>
+      <form onSubmit={handleFiltering}>
         <div className="filteringTab p-3">
           <Select
             options={CUISINE}
@@ -65,7 +65,7 @@ const FilteringTab = ({ filters, setFilters }) => {
             value={filters.sort}
             onChange={(val) => setFilters({ ...filters, sort: val })}
           />
-          <button type="button" className="btn submitButton">
+          <button type="submit" className="btn submitButton">
             Submit
           </button>
         </div>
