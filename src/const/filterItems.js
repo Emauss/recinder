@@ -7,7 +7,7 @@ export const CUISINE = [
   { value: "thai", label: "Thai" },
 ];
 
-export const CATEGORY = [
+export const TYPE = [
   { value: "breakfast", label: "Breakfast" },
   { value: "dessert", label: "Dessert" },
   { value: "fingerfood", label: "Fingerfood" },

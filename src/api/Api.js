@@ -1,12 +1,12 @@
 import axios from "axios";
 
-export const getAllRecipes = async (offset = 0) => {
+export const getAllRecipes = async (filters) => {
   return await axios
     .get(`${process.env.REACT_APP_API_URL}/complexSearch`, {
       params: {
+        filters: filters,
         apiKey: process.env.REACT_APP_API_KEY,
         addRecipeInformation: true,
-        offset: offset,
       },
     })
     .then((response) => {
@@ -17,7 +17,7 @@ export const getAllRecipes = async (offset = 0) => {
     });
 };
 
-export const getSpecificRecipes = async () => {
+export const getSpecificRecipes = async (filters) => {
   return await axios
     .get(`${process.env.REACT_APP_API_URL}/complexSearch`, {
       params: {
