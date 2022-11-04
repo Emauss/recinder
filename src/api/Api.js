@@ -18,11 +18,11 @@ export const getRecipes = async (number = 10) => {
     });
 };
 
-export const getSpecificRecipes = async () => {
+export const getSpecificRecipes = async (filters) => {
   return await axios
     .get(`${process.env.REACT_APP_API_URL}/complexSearch`, {
       params: {
-        cuisine: "xd",
+        cuisine: "american",
         apiKey: process.env.REACT_APP_API_KEY,
         addRecipeInformation: true,
       },

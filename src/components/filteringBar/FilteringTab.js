@@ -2,7 +2,7 @@ import "../filteringBar/filteringTab.scss";
 import Select from "react-select";
 import {
   CUISINE,
-  CATEGORY,
+  TYPE,
   TOOLS,
   INGREDIENTS,
   INTOLERANCE,
@@ -23,12 +23,12 @@ const FilteringTab = ({ filters, setFilters, handleFiltering }) => {
             onChange={(val) => setFilters({ ...filters, cuisine: val })}
           />
           <Select
-            options={CATEGORY}
-            placeholder="Select category"
+            options={TYPE}
+            placeholder="Select type"
             className="mb-2"
             isMulti
-            value={filters.category}
-            onChange={(val) => setFilters({ ...filters, category: val })}
+            value={filters.type}
+            onChange={(val) => setFilters({ ...filters, type: val })}
           />
 
           <Select
