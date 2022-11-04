@@ -16,7 +16,7 @@ const Finder = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    getAllRecipes().then((res) => setData(res.results));
+    // getAllRecipes().then((res) => setData(res.results));
   }, []);
 
   const handleFiltering = (e) => {
