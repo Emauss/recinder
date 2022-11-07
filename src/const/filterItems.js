@@ -63,4 +63,5 @@ export const SORTINGOPTIONS = [
   { value: "time", label: "Time" },
   { value: "price", label: "Price" },
   { value: "servings", label: "Servings" },
+  { value: undefined, label: "Default" },
 ];

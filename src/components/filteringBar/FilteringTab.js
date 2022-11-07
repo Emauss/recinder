@@ -1,18 +1,15 @@
 import "../filteringBar/filteringTab.scss";
 import Select from "react-select";
-import {
-  CUISINE,
-  TYPE,
-  TOOLS,
-  INGREDIENTS,
-  INTOLERANCE,
-  SORTINGOPTIONS,
-} from "../../const/filterItems";
+import { CUISINE, TYPE, TOOLS, INGREDIENTS, INTOLERANCE, SORTINGOPTIONS } from "../../const/filterItems";
+import { useSearchParams } from "react-router-dom";
+import { handleFiltering } from "../../helpers/handleFiltering";
 
-const FilteringTab = ({ filters, setFilters, handleFiltering }) => {
+const FilteringTab = ({ filters, setFilters }) => {
+  const [searchParams, setSearchParams] = useSearchParams();
+
   return (
     <div className="col-12 col-md-3">
-      <form onSubmit={handleFiltering}>
+      <form onSubmit={(e) => handleFiltering(e, filters, searchParams, setSearchParams)}>
         <div className="filteringTab p-3">
           <Select
             options={CUISINE}
