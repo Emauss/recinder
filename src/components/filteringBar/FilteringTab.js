@@ -1,18 +1,15 @@
 import "../filteringBar/filteringTab.scss";
 import Select from "react-select";
-import {
-  CUISINE,
-  CATEGORY,
-  TOOLS,
-  INGREDIENTS,
-  INTOLERANCE,
-  SORTINGOPTIONS,
-} from "../../const/filterItems";
+import { CUISINE, TYPE, TOOLS, INGREDIENTS, INTOLERANCE, SORTINGOPTIONS } from "../../const/filterItems";
+import { useSearchParams } from "react-router-dom";
+import { handleFiltering } from "../../helpers/handleFiltering";
 
 const FilteringTab = ({ filters, setFilters }) => {
+  const [searchParams, setSearchParams] = useSearchParams();
+
   return (
     <div className="col-12 col-md-3">
-      <form>
+      <form onSubmit={(e) => handleFiltering(e, filters, searchParams, setSearchParams)}>
         <div className="filteringTab p-3">
           <Select
             options={CUISINE}
@@ -23,12 +20,12 @@ const FilteringTab = ({ filters, setFilters }) => {
             onChange={(val) => setFilters({ ...filters, cuisine: val })}
           />
           <Select
-            options={CATEGORY}
-            placeholder="Select category"
+            options={TYPE}
+            placeholder="Select type"
             className="mb-2"
             isMulti
-            value={filters.category}
-            onChange={(val) => setFilters({ ...filters, category: val })}
+            value={filters.type}
+            onChange={(val) => setFilters({ ...filters, type: val })}
           />
 
           <Select
@@ -65,7 +62,7 @@ const FilteringTab = ({ filters, setFilters }) => {
             value={filters.sort}
             onChange={(val) => setFilters({ ...filters, sort: val })}
           />
-          <button type="button" className="btn submitButton">
+          <button type="submit" className="btn submitButton">
             Submit
           </button>
         </div>

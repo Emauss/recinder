@@ -7,7 +7,7 @@ export const CUISINE = [
   { value: "thai", label: "Thai" },
 ];
 
-export const CATEGORY = [
+export const TYPE = [
   { value: "breakfast", label: "Breakfast" },
   { value: "dessert", label: "Dessert" },
   { value: "fingerfood", label: "Fingerfood" },
@@ -63,4 +63,5 @@ export const SORTINGOPTIONS = [
   { value: "time", label: "Time" },
   { value: "price", label: "Price" },
   { value: "servings", label: "Servings" },
+  { value: undefined, label: "Default" },
 ];
