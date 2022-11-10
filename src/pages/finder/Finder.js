@@ -1,6 +1,7 @@
 import "../finder/finder.scss";
 import FilteringTab from "../../components/filteringBar/FilteringTab";
 import ListOfRecipes from "../../components/listOfRecipes/ListOfRecipes";
+import ScrollTop from "../../components/scrollTop/ScrollTop";
 import { useState } from "react";
 
 const Finder = () => {
@@ -21,6 +22,7 @@ const Finder = () => {
         <FilteringTab filters={filters} setFilters={setFilters} />
         <ListOfRecipes data={data} setData={setData} filters={filters} />
       </div>
+      <ScrollTop />
     </div>
   );
 };
