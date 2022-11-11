@@ -12,8 +12,6 @@
 .shortInfoBar {
     text-align: right;
     font-size: larger;
-    font-style: italic;
-    font-weight: 200;
 
     span{
         margin-left: 20px;
@@ -35,4 +33,5 @@
         background-color: $secondaryBlue;
         border-radius: $radius;
         margin: 0 0 24px 0 !important;
+        font-family: $normalFont;
 }
