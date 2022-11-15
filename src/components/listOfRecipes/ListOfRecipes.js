@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "..//listOfRecipes/listOfRecipes.scss";
 import RecipeElement from "../recipeElement/RecipeElement";
 import InfiniteScroll from "react-infinite-scroller";
