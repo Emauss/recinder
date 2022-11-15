@@ -9,9 +9,9 @@ export const getRecipes = async (number = 10, filters) => {
 
   params.cuisine = filters?.cuisine.length ? convertRawParam(filters.cuisine) : "";
   params.type = filters?.type.length ? convertRawParam(filters.type) : "";
-  params.tools = filters?.tools.length ? convertRawParam(filters.tools) : "";
-  params.ingredients = filters?.ingredients.length ? convertRawParam(filters.ingredients) : "";
-  params.intolerance = filters?.intolerance.length ? convertRawParam(filters.intolerance) : "";
+  params.equipment = filters?.tools.length ? convertRawParam(filters.tools) : "";
+  params.includeIngredients = filters?.ingredients.length ? convertRawParam(filters.ingredients) : "";
+  params.intolerances = filters?.intolerance.length ? convertRawParam(filters.intolerance) : "";
   params.sort = filters?.sort ? filters.sort.value : "";
 
   return await axios

@@ -10,7 +10,7 @@ const FilteringTab = ({ filters, setFilters }) => {
   return (
     <div className="col-12 col-md-3">
       <form onSubmit={(e) => handleFiltering(e, filters, searchParams, setSearchParams)}>
-        <div className="filteringTab p-3">
+        <div className="filteringTab p-3 shadow">
           <Select
             options={CUISINE}
             placeholder="Select cuisine"
@@ -62,9 +62,6 @@ const FilteringTab = ({ filters, setFilters }) => {
             value={filters.sort}
             onChange={(val) => setFilters({ ...filters, sort: val })}
           />
-          <button type="submit" className="btn submitButton">
-            Submit
-          </button>
         </div>
       </form>
     </div>
