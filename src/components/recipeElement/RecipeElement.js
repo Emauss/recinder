@@ -10,8 +10,9 @@ import {
 const RecipeElement = ({ recipe }) => {
   fontawesome.library.add(faClock, faMoneyBill, faUser);
 
+const RecipeElement = ({ recipe }) => {
   return (
-    <>
+    <a href={recipe.spoonacularSourceUrl} className="recipeItem" target="_blank" rel="noreferrer">
       <div className="row recipeBlock p-3">
         <div className="col-12 col-lg-8 mb-3">
           <h2 className="titleRecipe">{recipe.title}</h2>
@@ -37,7 +38,7 @@ const RecipeElement = ({ recipe }) => {
           <img src={recipe.image} alt={recipe.title} className="imgSize" />
         </div>
       </div>
-    </>
+    </a>
   );
 };
 export default RecipeElement;
