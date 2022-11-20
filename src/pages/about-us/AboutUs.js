@@ -7,7 +7,7 @@ const AboutUs = () => {
     <section className="container my-5 px-md-0 px-4">
       <div className="row mb-5">
         <div className="col-md-6 pe-md-5">
-          <h1 className="mb-4"> About us</h1>
+          <h2 className="mb-4"> About us</h2>
           <ExampleText />
         </div>
         <div className="col-md-6 d-flex align-items-center align-items-xl-start">
