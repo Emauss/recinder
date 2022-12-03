@@ -4,9 +4,10 @@ import RecipeElement from "../recipeElement/RecipeElement";
 import InfiniteScroll from "react-infinite-scroller";
 import { getRecipes } from "../../api/Api";
 import { useEffect, useState } from "react";
+import Loader from "../loader/Loader";
 
 const ListOfRecipes = ({ data, setData, filters }) => {
-  let [page, setPage] = useState(1);
+  const [page, setPage] = useState(1);
   const [error, setError] = useState("");
   const [currentItems, setCurrentItems] = useState(10);
   const [totalResults, setTotalResults] = useState();
@@ -27,7 +28,6 @@ const ListOfRecipes = ({ data, setData, filters }) => {
   };
 
   useEffect(() => {
-    setPage(1);
     handleData(1);
   }, [filters]);
 
@@ -36,15 +36,10 @@ const ListOfRecipes = ({ data, setData, filters }) => {
       <InfiniteScroll
         pageStart={0}
         initialLoad={false}
-        loadMore={() => handleData(++page)}
+        threshold={500}
+        loadMore={() => handleData(page + 1)}
         hasMore={!error.length ? (totalResults ? currentItems < totalResults : true) : false}
-        loader={
-          <div className="text-center loader my-4" key={0}>
-            <div className="spinner-border text-primary" role="status">
-              <span className="visually-hidden">Loading...</span>
-            </div>
-          </div>
-        }
+        loader={<Loader />}
       >
         {!totalResults || data.length || error.length ? (
           data.map((recipe) => <RecipeElement recipe={recipe} key={recipe.id} />)

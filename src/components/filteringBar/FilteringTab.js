@@ -3,6 +3,7 @@ import Select from "react-select";
 import { CUISINE, TYPE, TOOLS, INGREDIENTS, INTOLERANCE, SORTINGOPTIONS } from "../../const/filterItems";
 import { useSearchParams } from "react-router-dom";
 import { handleFiltering } from "../../helpers/handleFiltering";
+import createReactSelectStyle from "../../helpers/createReactSelectStyle";
 
 const FilteringTab = ({ filters, setFilters }) => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -14,16 +15,18 @@ const FilteringTab = ({ filters, setFilters }) => {
           <Select
             options={CUISINE}
             placeholder="Select cuisine"
-            className="mb-2"
+            className="mb-2 filteringTabSelect"
             isMulti
+            styles={createReactSelectStyle()}
             value={filters.cuisine}
             onChange={(val) => setFilters({ ...filters, cuisine: val })}
           />
           <Select
             options={TYPE}
             placeholder="Select type"
-            className="mb-2"
+            className="mb-2 filteringTabSelect"
             isMulti
+            styles={createReactSelectStyle()}
             value={filters.type}
             onChange={(val) => setFilters({ ...filters, type: val })}
           />
@@ -31,8 +34,9 @@ const FilteringTab = ({ filters, setFilters }) => {
           <Select
             options={TOOLS}
             placeholder="Select tools"
-            className="mb-2"
+            className="mb-2 filteringTabSelect"
             isMulti
+            styles={createReactSelectStyle()}
             value={filters.tools}
             onChange={(val) => setFilters({ ...filters, tools: val })}
           />
@@ -40,8 +44,9 @@ const FilteringTab = ({ filters, setFilters }) => {
           <Select
             options={INGREDIENTS}
             placeholder="Select ingredients"
-            className="mb-2"
+            className="mb-2 filteringTabSelect"
             isMulti
+            styles={createReactSelectStyle()}
             value={filters.ingredients}
             onChange={(val) => setFilters({ ...filters, ingredients: val })}
           />
@@ -49,8 +54,9 @@ const FilteringTab = ({ filters, setFilters }) => {
           <Select
             options={INTOLERANCE}
             placeholder="Select intolerance"
-            className="mb-2"
+            className="mb-2 filteringTabSelect"
             isMulti
+            styles={createReactSelectStyle()}
             value={filters.intolerance}
             onChange={(val) => setFilters({ ...filters, intolerance: val })}
           />
@@ -58,7 +64,8 @@ const FilteringTab = ({ filters, setFilters }) => {
           <Select
             options={SORTINGOPTIONS}
             placeholder="Sort"
-            className="mb-2"
+            className="mb-2 filteringTabSelect"
+            styles={createReactSelectStyle()}
             value={filters.sort}
             onChange={(val) => setFilters({ ...filters, sort: val })}
           />

@@ -1,15 +1,19 @@
 @import "../../utils/theme.scss";
 
-.filteringTab{
-    background-color: $secondaryBlue;
-    border-radius: $radius;
-    margin-bottom: 24px;
+.filteringTab {
+  background-color: $secondaryBlue;
+  border-radius: $radius;
+  margin-bottom: 24px;
+
+  &Select {
+    cursor: pointer;
+  }
 }
 
 .submitButton {
-    width: 100%;
-    background-color: $primaryBlue;
-    &:hover {
-        background-color: #72bbff;
-    }
+  width: 100%;
+  background-color: $primaryBlue;
+  &:hover {
+    background-color: #72bbff;
+  }
 }
