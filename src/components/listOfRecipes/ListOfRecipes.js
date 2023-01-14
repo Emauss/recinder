@@ -39,7 +39,7 @@ const ListOfRecipes = ({ data, setData, filters }) => {
         threshold={500}
         loadMore={() => handleData(page + 1)}
         hasMore={!error.length ? (totalResults ? currentItems < totalResults : true) : false}
-        loader={<Loader />}
+        loader={<Loader key={0} />}
       >
         {!totalResults || data.length || error.length ? (
           data.map((recipe) => <RecipeElement recipe={recipe} key={recipe.id} />)

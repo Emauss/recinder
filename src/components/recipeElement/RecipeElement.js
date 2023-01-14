@@ -1,22 +1,13 @@
 import "../recipeElement/recipeElement.scss";
 import fontawesome from "@fortawesome/fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faClock,
-  faMoneyBill,
-  faUser,
-} from "@fortawesome/fontawesome-free-solid";
+import { faClock, faMoneyBill, faUser } from "@fortawesome/fontawesome-free-solid";
 
 const RecipeElement = ({ recipe }) => {
   fontawesome.library.add(faClock, faMoneyBill, faUser);
 
   return (
-    <a
-      href={recipe.spoonacularSourceUrl}
-      className="recipeItem"
-      target="_blank"
-      rel="noreferrer"
-    >
+    <a href={recipe.spoonacularSourceUrl} className="recipeItem" target="_blank" rel="noreferrer">
       <div className="row recipeBlock p-3">
         <div className="col-12 col-lg-8 mb-3">
           <h2 className="titleRecipe">{recipe.title}</h2>
