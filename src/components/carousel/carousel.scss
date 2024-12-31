@@ -1,4 +1,4 @@
-@import "../../utils/theme.scss";
+@use "../../utils/theme.scss" as *;
 
 .imgHeight {
   max-height: 600px !important;
